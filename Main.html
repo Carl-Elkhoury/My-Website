@@ -1,0 +1,56 @@
+<head>
+    <title>My cv page</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+    $(document).ready(function() {
+  
+        $(window).scroll(function () {
+            // console.log($(window).scrollTop())
+          if ($(window).scrollTop() < 420) {
+            $('#selection-bar').addClass('selection-bar-fixed');
+          }
+          if ($(window).scrollTop() > 421) {
+            $('#selection-bar').removeClass('selection-bar-fixed');
+          }
+        });
+      });
+    </script>
+
+    <div class="homeBackground">
+        <div>
+            <div class="media-buttons">
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                </ul>
+            </div>
+            <div class="selection-bar-fixed" id="selection-bar">
+                <ul>
+                    <li>About</li>
+                    <li>Experience</li>
+                    <li>Skills</li>
+                    <li>Education</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <img id="protrait-pic" src="FullSizeRender.jpg">
+            <a href="" class="MainButton">Download My Resume</a>
+        </div>
+    </div>
+    <div class="homePageBottom">
+     <div>
+     <h1></h1>
+     </div>
+    </div>
+
+</body>

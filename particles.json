@@ -1,0 +1,60 @@
+{
+    "particles":{
+        "number":{
+            "value":150
+        },
+        "color": {
+            "value": ["#286DA8","#CD5360","#B37D4E", "#438496","#cedc55"]
+        },
+        "shape":{
+            "type": "circle",
+            "stroke":{
+                "width": 2,
+                "color": "#ccc"
+            },
+            "image":{
+                "src":"https://cdn1.iconfinder.com/data/icons/education-vol-3-1/64/107-512.png"
+            }
+        },
+        "opacity":{
+            "value":1,
+            "anim":{
+                "enable":false,
+                "speed":1
+            }
+        },
+        "size":{
+            "value":10,
+            "random":"true",
+            "anim":{
+                "enable":false,
+                "speed":5
+            }
+        },
+        "line_linked":{
+            "enable":true,
+            "distance": 100,
+            "color":"#fff",
+            "width":0.5
+          }
+    },
+    "interactivity":{
+        "events":{
+            "onhover":{
+              "enable":true,
+              "mode":"repulse"
+            },
+            "onclick":{
+              "enable": true,
+              "mode":"push"
+            }
+          },
+          "modes":{
+            "repulse":{
+              "distance":75,
+              "duration":1
+            }
+        }
+        
+    }
+}
