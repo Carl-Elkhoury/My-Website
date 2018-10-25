@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100%;
+}
 a{
     color: inherit;
     text-decoration: none;
@@ -30,21 +33,14 @@ h2{
     background-size: 100% 600px;
 }
 
-.selection-bar-fixed{
-    position: absolute !important;
-    top:58% !important;
-    width: 100% !important;
-}
-
 #selection-bar{
     color: white;
     font-display: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     top: 0;
     z-index: 100;
-    position: fixed;
     width: 100%;
-    height: auto;
+    min-height: 59.03px;
     background-color: rgb(71, 139, 182);
 }
 
@@ -122,6 +118,7 @@ h2{
     height: 170px;
     line-height: 100px;
     border-bottom-color:  transparent;
+    border-width: 0;
 }
 
 .MainButton{
@@ -135,21 +132,45 @@ h2{
     top: 43%;
     color: white;
     padding: 15px;
-    left: calc(50% - 5.5vw);
+    left: calc(50% - 85px);
 }
 
 .homePageBottom{
-
+    margin: 0;
     background-color: rgb(131, 192, 229);
-    padding-top: 40px;
-    padding-bottom: 18px;
-
+    padding-top: 3px;
+    padding-bottom: 3px;
+    min-height: calc(40% - 65px );
+    height: auto;
+    position: relative;
+    line-height: 25px;
 }
 
 .homePageBottom div{
     background-color: rgb(171, 220, 246);
-    height: 10.2vw;
+    margin-bottom: 10px;
     margin: 20px;
-    padding: 20px;
+    padding: 15px;
+    color: #0c75b2;
+    position: relative;
+    height: auto;
+}
+
+.homePageBottom h1{
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+}
+
+.homePageBottom span{
+    background-color:#1f90d1;
+    border-radius:5px;
+    text-shadow:0px -1px 50px #1942bf;
+    white-space:nowrap;
+    background-color:#1f90d1;
+	-moz-border-radius:5px;
+	-webkit-border-radius:11px;
+    color: white;
+    padding: 5px;
 }
 
